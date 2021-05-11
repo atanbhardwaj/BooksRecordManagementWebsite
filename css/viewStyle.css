@@ -1,0 +1,37 @@
+body {
+    background: url("../img/img.jpg");
+    background-size: cover;
+}
+
+.jumbotron {
+    background-image: url("../img/img1.jpg");
+    background-size: cover;
+}
+
+h2{
+    font-size:5vw; 
+    text-align:center;
+    font-family:'Courier New', Courier, monospace;
+}
+
+th, td, label{
+    font-family:'Courier New', Courier, monospace;
+    font-weight:bold;
+}
+
+h1{
+    font-size:6vw;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#hp{
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+a{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+}
