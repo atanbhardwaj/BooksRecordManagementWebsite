@@ -22,17 +22,15 @@ mysqli_close($conn);
 	<title>Insertion Form</title>
 </head>
 <body>
-<h1>Insertion Log</h1>
-<h2><?php
+<div class="jumbotron">
+    <h1 id="headings" style="color:white;"><strong>Insertion Log</strong></h1> 
+</div>
+<h2 style="color: white;"><?php
 if($status==1)
-		echo "Record Inserted";
+		echo "Record Inserted Successfully";
 else
 	echo "Insertion Failed";
 ?></h2>
-<h2> Want To Insert Another Record? <h2> 
-<div class="d-flex justify-content-center">
-<a href="insertionform.php" class="btn btn-danger" role="button">Click Here</a>
-</div>
 <div class="d-flex justify-content-center mt-3">
 <a href="home.php" class="btn btn-info" role="button">HOME</a>
 </div>
@@ -40,8 +38,8 @@ else
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3" style=" font-family:'Courier New', Courier, monospace; font-weight: bold;">© 2021 Copyright:
-    <a href="https://github.com/atanbhardwaj" style="color: white;"> Atan Bhardwaj</a>
+  <div class="footer-copyright text-center py-3" style=" font-family:'Courier New', Courier, monospace; font-size:15px;font-weight: bold; color:white">© 2021 Copyright:
+    <a href="https://github.com/atanbhardwaj" style="color: green; font-size: 15px"> Atan Bhardwaj</a>
   </div>
   <!-- Copyright -->
 
