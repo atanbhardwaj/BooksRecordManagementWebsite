@@ -19,9 +19,12 @@ mysqli_close($conn);
 <title>Update Book Records</title>
 </head>
 <body>
+<div class="jumbotron">
+    <h1 id="headings" style="color:white;"><strong>Update The Records</strong></h1>      
+    <p id="hp">Here's the list of all the books... </p>
+</div>
 <div class="table-responsive">
 <div class="container">
-<h1>Update Book Details</h1>
 <form action="updation.php" method="post">
 <table class="table table-hover table-bordered">
 	<thead class="thead-dark">
@@ -41,7 +44,7 @@ mysqli_close($conn);
 	?>
 
 	<tr>
-		<td><?php echo $rows['book_id']; ?>
+		<td style="color:white;"><?php echo $rows['book_id']; ?>
 			<input type="hidden" name="bookid<?php echo $i ?>" value="<?php echo $rows['book_id']; ?>" />
 		</td>
 
@@ -68,8 +71,8 @@ mysqli_close($conn);
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3" style=" font-family:'Courier New', Courier, monospace; font-weight: bold;">© 2021 Copyright:
-    <a href="https://github.com/atanbhardwaj" style="color: white;"> Atan Bhardwaj</a>
+  <div class="footer-copyright text-center py-3" style=" font-family:'Courier New', Courier, monospace; font-weight: bold; color:white">© 2021 Copyright:
+    <a href="https://github.com/atanbhardwaj" style="color: green;"> Atan Bhardwaj</a>
   </div>
   <!-- Copyright -->
 
