@@ -41,9 +41,11 @@ mysqli_close($conn);
 	<title>Updation</title>
 </head>
 <body>
-<h1>Updation Log</h1>
-<h2><?php
-		echo "Records Updated";
+<div class="jumbotron">
+    <h1 id="headings" style="color:white;"><strong>Updation Log</strong></h1>      
+</div>
+<h2 style="color: white;"><?php
+		echo "Records Updated Successfully";
 ?></h2>
 <div class="d-flex justify-content-center">
 <a href="home.php" class="btn btn-info" role="button">HOME</a>
@@ -52,8 +54,8 @@ mysqli_close($conn);
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3" style=" font-family:'Courier New', Courier, monospace; font-weight: bold;">© 2021 Copyright:
-    <a href="https://github.com/atanbhardwaj" style="color: white;"> Atan Bhardwaj</a>
+  <div class="footer-copyright text-center py-3" style=" font-family:'Courier New', Courier, monospace; font-size:15px;font-weight: bold; color:white">© 2021 Copyright:
+    <a href="https://github.com/atanbhardwaj" style="font-size:15px; color: green;"> Atan Bhardwaj</a>
   </div>
   <!-- Copyright -->
 
