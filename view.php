@@ -19,9 +19,12 @@ mysqli_close($conn);
 <link rel="stylesheet" type="text/css" href="./css/viewStyle.css"/>
 </head>
 <body>
+<div class="jumbotron">
+    <h1 id="headings" style="color:white;"><strong>BOOK SHELF</strong></h1>      
+    <p id="hp">Here's the list of all the books... </p>
+</div>
 <div class="table-responsive">
 <div class="container">
-<h2 >BOOK SHELF</h2>
 <table class="table table-hover table-bordered">
 	<thead class="thead-dark">
 	<tr>
@@ -41,10 +44,10 @@ mysqli_close($conn);
 	?>
 
 	<tr>
-		<td><?php echo $rows['book_id']; ?></td>
-		<td><?php echo $rows['title']; ?></td>
-		<td><?php echo $rows['price']; ?></td>
-		<td><?php echo $rows['author']; ?></td>
+		<td style="color:white;"><?php echo $rows['book_id']; ?></td>
+		<td style="color:white;"><?php echo $rows['title']; ?></td>
+		<td style="color:white;"><?php echo $rows['price']; ?></td>
+		<td style="color:white;"><?php echo $rows['author']; ?></td>
 	</tr>
 
 	<?php
@@ -60,8 +63,8 @@ mysqli_close($conn);
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3" style=" font-family:'Courier New', Courier, monospace; font-weight: bold;">© 2021 Copyright:
-    <a href="https://github.com/atanbhardwaj" style="color: white;"> Atan Bhardwaj</a>
+  <div class="footer-copyright text-center py-3" style=" font-family:'Courier New', Courier, monospace; font-weight: bold; color:white;">© 2021 Copyright:
+    <a href="https://github.com/atanbhardwaj" style="color: green;"> Atan Bhardwaj</a>
   </div>
   <!-- Copyright -->
 
