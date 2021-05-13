@@ -10,20 +10,22 @@
 	<title>Insertion Form</title>
 </head>
 <body>
+<div class="jumbotron">
+    <h1 id="headings" style="color:white;"><strong>Go Ahead! Insert Record</strong></h1>      
+</div>
 <div class="container">
-<h1>Go Ahead! Insert Record</h1>
 <form action="insertion.php" method="post">
   <div class="form-group">
     <label for="title">Title</label>
-    <input type="text" name="title" class="form-control">
+    <input type="text" name="title" class="form-control" required="" placeholder="Enter title">
   </div>
   <div class="form-group">
     <label for="price">Price</label>
-    <input type="text" name="price" class="form-control">
+    <input type="text" name="price" class="form-control" required="" placeholder="Enter price">
   </div>
   <div class="form-group">
   <label class="form-group" for="author">Author</label>
-    <input type="text" name="author" class="form-control">
+    <input type="text" name="author" class="form-control" required="" placeholder="Enter author's name">
   </div>
   <div class="d-flex justify-content-center">
   <button type="submit" class="btn btn-danger" value="insert">Insert</button>
@@ -38,8 +40,8 @@
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3" style=" font-family:'Courier New', Courier, monospace; font-weight: bold;">© 2021 Copyright:
-    <a href="https://github.com/atanbhardwaj" style="color: white;"> Atan Bhardwaj</a>
+  <div class="footer-copyright text-center py-3" style=" font-family:'Courier New', Courier, monospace; font-weight: bold; color:white;">© 2021 Copyright:
+    <a href="https://github.com/atanbhardwaj" style="color: green;"> Atan Bhardwaj</a>
   </div>
   <!-- Copyright -->
 
