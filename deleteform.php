@@ -19,9 +19,12 @@ mysqli_close($conn);
 	<title>Delete Book Records</title>
 </head>
 <body>
+<div class="jumbotron">
+    <h1 id="headings" style="color:white;"><strong>Delete Book Records</strong></h1>      
+    <p id="hp">Select books to clear their records... </p>
+</div>
 <div class="container">>
 	<div class="table-responsive">
-<h1>Book Shelf</h1>
 <form action="deletion.php" method="post">
 <table class="table table-hover table-bordered">
 	<thead class="thead-dark">
@@ -42,11 +45,11 @@ mysqli_close($conn);
 	?>
 
 	<tr>
-		<td><?php echo $rows['book_id']; ?></td>
-		<td><?php echo $rows['title']; ?></td>
-		<td><?php echo $rows['price']; ?></td>
-		<td><?php echo $rows['author']; ?></td>
-		<td> <input type="checkbox" value="<?php echo $rows['book_id'];?>" name="checkbox<?php echo $i; ?>"> </td>
+		<td style="color:white;"><?php echo $rows['book_id']; ?></td>
+		<td style="color:white;"><?php echo $rows['title']; ?></td>
+		<td style="color:white;"><?php echo $rows['price']; ?></td>
+		<td style="color:white;"><?php echo $rows['author']; ?></td>
+		<td style="color:red;"> <input type="checkbox" value="<?php echo $rows['book_id'];?>" name="checkbox<?php echo $i; ?>"> </td>
 	</tr>
 
 	<?php
@@ -70,11 +73,12 @@ mysqli_close($conn);
 <footer class="page-footer font-small blue">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3" style=" font-family:'Courier New', Courier, monospace; font-weight: bold;">© 2021 Copyright:
-    <a href="https://github.com/atanbhardwaj" style="color: white;"> Atan Bhardwaj</a>
+  <div class="footer-copyright text-center py-3" style=" font-family:'Courier New', Courier, monospace; font-weight: bold; color:white;">© 2021 Copyright:
+    <a href="https://github.com/atanbhardwaj" style="color: green;"> Atan Bhardwaj</a>
   </div>
   <!-- Copyright -->
 
 </footer>
 </body>
 </html>
+
